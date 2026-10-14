@@ -7,7 +7,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // Lấy URI từ MongoDB Atlas qua biến môi trường MONGODB_URI
-const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/shop_order';
+const mongoURI = process.env.MONGODB_URI || 'mongodb+srv://danghaianh10a7_db_user:a0972440028@cluster0.fpvxukw.mongodb.net/shop_order?retryWrites=true&w=majority&appName=Cluster0';
 
 // Connect to MongoDB
 mongoose.connect(mongoURI).then(() => {
